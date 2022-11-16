@@ -1,0 +1,19 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* FONT END */
+
+/* Colors */
+:root{
+    --background-color: #e6e1d1;
+    --gray: #9c9b9a;
+    --dark-green: #051c08;
+    --yellow: #ffc803;
+}
+/* Colors END*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
