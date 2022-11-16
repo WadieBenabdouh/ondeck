@@ -2,64 +2,94 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- CDN -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <!--  CDN END-->
-   <link rel="stylesheet" href="styles.css">
-   <title>ONDECK - Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  CDN END-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Ondeck</title>
 </head>
 
 <body>
     <header>
-            <img src="/Assets/Logo.svg" alt="">
-            <!-- nav bar links -->
-            <ul class="links">
-                <li><a href="#">Products <i class="fas fa-caret-down"></i></a>
-                    <!-- DROPDOWN FOR PRODUCTS -->
-                    <div class="dropdown">
-                        <ul>
-                          <li>
+        <img src="/Assets/Logo.svg" alt="">
+        <!-- nav bar links -->
+        <ul class="links">
+            <li><a href="#">Products <i class="fas fa-caret-down"></i></a>
+                <!-- DROPDOWN FOR PRODUCTS -->
+                <div class="dropdown">
+                    <ul>
+                        <li>
                             <img src="/Assets/Spense_Icon.svg" alt="">
                             <div class="product">
                                 <h4>SPense</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</p>
                             </div>
-                          </li>
+                        </li>
 
-                          <li>
+                        <li>
                             <img src="/Assets/Fiber_Icon.svg" alt="">
                             <div class="product">
                                 <h4>SPense</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</p>
                             </div>
-                          </li>
+                        </li>
 
-                          <li>
+                        <li>
                             <img src="/Assets/Gradie_Icon.svg" alt="">
                             <div class="product">
                                 <h4>SPense</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</p>
                             </div>
-                          </li>
-                        </ul>  
-                      </div>
-                    <!-- Dropdown End -->
-                </li>
-                <li><a href="#">Challenges</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Other Links</a></li>
-            </ul>
-            <!-- Register links -->
-            <ul class="register">
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Try for free</a></li>
-            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Dropdown End -->
+            </li>
+            <li><a href="#">Challenges</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Other Links</a></li>
+        </ul>
+        <!-- Register links -->
+        <ul class="register">
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Try for free</a></li>
+        </ul>
 
     </header>
+
+    <main>
+        <div class="grid-article">
+            <div class="card-one">
+                <h1>Ondeck is your remote <span style="color: var(--yellow);">conference calling tool</span></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, itaque facilis explicabo et
+                    architecto qui quidem tempora quia error dolores!</p>
+                <li><a href="#">Try for free</a></li>
+                <p class="rating">Rating based on reviews from
+                    <img src="/Assets/Capterra Logo.svg" alt="Captera">
+                    <img src="/Assets/AlternativeTo Logo.svg" alt="AlternativeTo">
+                </p>
+            </div>
+
+            <div class="card-two">
+                <img class="sara-call" src="/Assets/Hero Image.png" alt="call image">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Trusted by 3M+ people at companies like</p>
+        <div class="sponsors">
+            <img src="/Assets/Netflix Logo.svg" alt="Netflix">
+            <img src="/Assets/Shopify Logo.svg" alt="Shopify">
+            <img src="/Assets/Spotify Logo.svg" alt="Spotify">
+            <img src="/Assets/Walmart Logo.svg" alt="Walmart">
+        </div>
+    </footer>
 </body>
+
 </html>

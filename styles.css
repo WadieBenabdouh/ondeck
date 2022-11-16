@@ -3,26 +3,29 @@
 /* FONT END */
 
 /* Colors */
-:root{
+:root {
     --background-color: #e6e1d1;
     --gray: #9c9b9a;
-    --dark-green: #051c08;
+    --dark-green: #095213;
     --yellow: #ffc803;
 }
+
 /* Colors END*/
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-body{
+
+body {
     background-color: var(--background-color);
+    min-height: 100vh;
 }
 
 /* HEADER */
-header{
+header {
     display: flex;
     justify-content: space-around;
     padding: 2em 1em;
@@ -30,18 +33,22 @@ header{
     align-items: center;
     position: relative;
 }
-header > ul{
+
+header>ul {
     display: flex;
     list-style-type: none;
 }
-header ul li{
+
+header ul li {
     padding: 0 10px;
 }
-header a{
+
+header a {
     text-decoration: none;
     color: var(--gray);
     padding: 10px 15px;
 }
+
 .dropdown {
     position: absolute;
     display: none;
@@ -50,17 +57,89 @@ header a{
     width: 30%;
     border-radius: 1em;
 }
-/* .dropdown li{
-    list-style-type: none;
-    padding: 10px;
-    margin: 10px;
-    margin-left: -10px;
-} */
-.dropdown li{
+
+.dropdown li {
     display: flex;
     gap: 1em;
     padding: 1.5em;
 }
-.links>:nth-child(1):hover .dropdown{
+
+.links>:nth-child(1):hover .dropdown {
     display: block;
+}
+
+.register>:nth-child(2) a {
+    color: #ffffff;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    background-color: var(--dark-green);
+    font-weight: bold;
+}
+
+/* MAIN */
+main {
+    padding: 0 5em;
+}
+.grid-article {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+}
+
+.card-one {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.card-one p{
+    line-height: 1.5em;
+    width: 80%;
+}
+
+.card-one li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.card-one a {
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    background-color: var(--dark-green);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-one h1 {
+    width: 70%;
+    font-size: 3rem;
+}
+
+.sara-call {
+    max-width: 20em;
+}
+
+.rating {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 4em;
+    padding: 2em 0;
+}
+footer p{
+    color: var(--gray);
+    font-weight: bold;
+}
+.sponsors{
+    display: flex;
+    gap: 5em;
 }
