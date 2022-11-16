@@ -27,6 +27,8 @@ header{
     justify-content: space-around;
     padding: 2em 1em;
     flex-wrap: wrap;
+    align-items: center;
+    position: relative;
 }
 header > ul{
     display: flex;
@@ -38,4 +40,27 @@ header ul li{
 header a{
     text-decoration: none;
     color: var(--gray);
+    padding: 10px 15px;
+}
+.dropdown {
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    background: #fff;
+    width: 30%;
+    border-radius: 1em;
+}
+/* .dropdown li{
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    margin-left: -10px;
+} */
+.dropdown li{
+    display: flex;
+    gap: 1em;
+    padding: 1.5em;
+}
+.links>:nth-child(1):hover .dropdown{
+    display: block;
 }
