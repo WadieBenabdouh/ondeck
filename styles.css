@@ -80,6 +80,7 @@ header a {
 main {
     padding: 0 5em;
 }
+
 .grid-article {
     margin-top: 3em;
     display: grid;
@@ -92,7 +93,8 @@ main {
     flex-direction: column;
     gap: 1em;
 }
-.card-one p{
+
+.card-one p {
     line-height: 1.5em;
     width: 80%;
 }
@@ -127,7 +129,7 @@ main {
 }
 
 /* FOOTER */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,28 +137,33 @@ footer{
     margin-top: 4em;
     padding: 2em 0;
 }
-footer p{
+
+footer p {
     color: var(--gray);
     font-weight: bold;
 }
-.sponsors{
+
+.sponsors {
     display: flex;
     gap: 5em;
 }
 
-/* RESPONSIVE AREA */
+/*----------- RESPONSIVE AREA ----------- */
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
+
     /* HEADER */
-    header{
+    header {
         flex-direction: column;
         align-items: center;
         gap: 3em;
     }
-    .logo-brand{
+
+    .logo-brand {
         max-width: 10em;
     }
-    .links{
+
+    .links {
         outline: green solid 1px;
         /* white-space: nowrap; */
         flex-direction: column;
@@ -166,19 +173,74 @@ footer p{
         width: 100%;
         align-items: center;
     }
-    .links li a{
+
+    .links li a {
         color: #000;
         font-weight: bold;
     }
+
     .dropdown {
         margin-top: 10px;
         width: 80%;
         left: 40px;
+        background-color: #252522;
     }
+
     .dropdown li {
         display: flex;
         gap: 1em;
         padding: 1.5em;
+        color: #fff;
     }
+
+    .register {
+        flex-direction: column;
+        gap: 2em;
+        height: 10em;
+        justify-content: center;
+        align-items: center;
+        background-color: #ba5151;
+        border-top-right-radius: 2em;
+        border-bottom-left-radius: 2em;
+    }
+
+    .register>:nth-child(1) a {
+        color: #ffffff;
+        font-weight: bold;
+    }
+
     /* HEADER END */
+
+    /* MAIN GRID */
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid-article {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+    .card-one{
+        grid-row-start: 2;
+    }
+    .card-one h1{
+        font-size: 2rem;
+        width: 90%;
+    }
+    .card-one p{
+        width: 100%;
+    }
+    .rating{
+        margin: 2em 0;
+        font-weight: bold;
+        white-space: nowrap;
+        text-decoration: underline red;
+        text-underline-offset: 3px;
+    }
+    /* MAIN GRID END */
+
+    /* FOOTER */
+    
+    /* FOOTER END */
 }
