@@ -221,34 +221,42 @@ footer p {
         grid-template-columns: 1fr;
         gap: 2em;
     }
-    .card-one{
+
+    .card-one {
         grid-row-start: 2;
     }
-    .card-one h1{
+
+    .card-one h1 {
         font-size: 2rem;
         width: 90%;
     }
-    .card-one p{
+
+    .card-one p {
         width: 100%;
     }
-    .rating{
+
+    .rating {
         margin: 2em 0;
         font-weight: bold;
         white-space: nowrap;
         text-decoration: underline red;
         text-underline-offset: 3px;
     }
+
     /* MAIN GRID END */
 
     /* FOOTER */
-    footer{
+    footer {
         gap: 3em;
     }
-    .sponsors{
+
+    .sponsors {
         flex-direction: column;
     }
-    .sponsors img{
+
+    .sponsors img {
         max-width: 10em;
     }
+
     /* FOOTER END */
 }
