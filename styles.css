@@ -241,6 +241,14 @@ footer p {
     /* MAIN GRID END */
 
     /* FOOTER */
-    
+    footer{
+        gap: 3em;
+    }
+    .sponsors{
+        flex-direction: column;
+    }
+    .sponsors img{
+        max-width: 10em;
+    }
     /* FOOTER END */
 }
