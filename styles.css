@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 2em 1em;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     position: relative;
 }
@@ -142,4 +142,43 @@ footer p{
 .sponsors{
     display: flex;
     gap: 5em;
+}
+
+/* RESPONSIVE AREA */
+
+@media screen and (max-width: 414px){
+    /* HEADER */
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+    .logo-brand{
+        max-width: 10em;
+    }
+    .links{
+        outline: green solid 1px;
+        /* white-space: nowrap; */
+        flex-direction: column;
+        gap: 2em;
+        background: url('/Assets/patternpad.svg');
+        padding: 1.5em;
+        width: 100%;
+        align-items: center;
+    }
+    .links li a{
+        color: #000;
+        font-weight: bold;
+    }
+    .dropdown {
+        margin-top: 10px;
+        width: 80%;
+        left: 40px;
+    }
+    .dropdown li {
+        display: flex;
+        gap: 1em;
+        padding: 1.5em;
+    }
+    /* HEADER END */
 }
